@@ -11,3 +11,5 @@ Maven打包：dubbo-monitor-simple-2.0.0-assembly.tar.gz
 收集配置
 dubbo-provider/dubbo配置文件：<dubbo:monitor protocol="registry"/>
 dubbo-consumer/dubbo配置文件：<dubbo:monitor protocol="registry"/>
+
+注：图表默认是15min更新一次
