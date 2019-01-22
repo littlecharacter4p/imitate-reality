@@ -15,5 +15,5 @@
 
 	<dubbo:protocol name="dubbo" port="28051" />
 
-	<dubbo:service interface="com.lc.imitate.reality.contract.UserService" ref="userService"/>
+	<dubbo:service interface="com.lc.imitate.reality.contract.UserContract" ref="userContract"/>
 </beans>  
