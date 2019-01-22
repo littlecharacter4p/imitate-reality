@@ -1,7 +1,9 @@
 dubbo-monitor-simple
 GitHub地址：https://github.com/apache/incubator-dubbo-ops/tree/master
 Zookeeper配置：dubbo.properties -> dubbo.registry.address=zookeeper://zk1:2181?backup=zk2:2181,zk3:2181
-Group配置（默认组是dubbo）：dubbo.application.owner=imitate-reality
+Group配置（默认组是dubbo）：dubbo-monitor-simple也是一个dubbo服务，要和业务服务属于同一个组才能搜集到数据
+dubbo.properties -> dubbo.application.owner=imitate-reality
+dubbo-monitor-simple.xml -> <dubbo:registry client="curator" address="${dubbo.registry.address}" group="${dubbo.application.owner}"/>
 Maven打包：dubbo-monitor-simple-2.0.0-assembly.tar.gz
 启动：解压dubbo-monitor-simple-2.0.0-assembly.tar.gz -> dubbo-monitor-simple-2.0.0/assembly.bin/start.cmd|start.sh
 访问：http://xx.xx.xx.xx:8080
