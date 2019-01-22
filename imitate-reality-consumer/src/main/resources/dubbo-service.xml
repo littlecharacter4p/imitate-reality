@@ -16,4 +16,6 @@
 	<dubbo:protocol name="dubbo" port="29051" />
 
 	<dubbo:reference id="userContract" interface="com.lc.imitate.reality.contract.UserContract" check="false" />
+
+	<dubbo:monitor protocol="registry"/>
 </beans>  
