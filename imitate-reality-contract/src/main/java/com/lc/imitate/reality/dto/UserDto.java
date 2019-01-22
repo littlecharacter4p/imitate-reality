@@ -6,11 +6,6 @@ public class UserDto implements Serializable {
     private Long userId;
     private String userName;
 
-    public UserDto(Long userId, String userName) {
-        this.userId = userId;
-        this.userName = userName;
-    }
-
     public Long getUserId() {
         return userId;
     }
