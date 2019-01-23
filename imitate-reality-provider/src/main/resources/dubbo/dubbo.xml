@@ -7,13 +7,13 @@
 		http://code.alibabatech.com/schema/dubbo
 		http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-	<dubbo:application name="imitate-reality-provider"></dubbo:application>
+	<dubbo:application name="${dubbo.application.name}" owner="${dubbo.application.owner}"/>
 
-	<dubbo:registry protocol="zookeeper"
-					address="zk1:2181,zk2:2181,zk3:2181"
-					group="imitate-reality"/>
+	<dubbo:registry protocol="${dubbo.registry.protocol}"
+					address="${dubbo.registry.address}"
+					group="${dubbo.application.group}"/>
 
-	<dubbo:protocol name="dubbo" port="28051" />
+	<dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}" />
 
 	<dubbo:service interface="com.lc.imitate.reality.contract.UserContract" ref="userContract"/>
 
