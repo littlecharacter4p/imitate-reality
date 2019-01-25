@@ -13,6 +13,7 @@
         <module>imitate-reality-provider</module>
         <module>imitate-reality-contract</module>
         <module>imitate-reality-consumer</module>
+        <module>imitate-reality-web</module>
     </modules>
 
 </project>
