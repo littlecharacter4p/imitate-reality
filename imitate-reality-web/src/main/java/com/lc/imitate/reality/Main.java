@@ -1,7 +1,7 @@
 package com.lc.imitate.reality;
 
 import com.alibaba.fastjson.JSON;
-import com.lc.imitate.reality.contract.UserContract;
+import com.lc.imitate.reality.user.contract.UserContract;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
